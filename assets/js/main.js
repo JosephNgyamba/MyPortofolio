@@ -233,3 +233,26 @@
   new PureCounter();
 
 })()
+
+/** mail */
+
+
+const data = {
+    service_id: 'service_m4zlhn8',
+    template_id: 'template_7h2la3q',
+    user_id: 'Oi7qNRcXuCiXsClwI',
+    template_params: {
+        'username': 'Joe',
+        'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+    }
+};
+
+fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    type: 'POST',
+    data: JSON.stringify(data),
+    contentType: 'application/json'
+}).then(function() {
+    // alert('Your mail is sent!');
+}).catch(function(error) {
+    alert('Oops... ' + JSON.stringify(error));
+});

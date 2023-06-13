@@ -424,7 +424,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #d3b300;
+  background-color: hsl(187, 100%, 41%);
   color: #fff;
   transition: all 500ms ease;
 }
@@ -478,8 +478,9 @@ a:hover {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9,);
+  background: rgba(73, 73, 73, 0.9);
   padding: 12px 0;
+  backdrop-filter: blur(5px);
 }
 
 /*--------------------------------------------------------------
@@ -880,8 +881,8 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #cf9800;
-  box-shadow: 0 0 0 10px #8f8f8f;
+  background-color: #00cfb3;
+  box-shadow: 0 0 0 10px #000000;
 }
 
 .service-box .service-ico {
